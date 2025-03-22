@@ -1,0 +1,20 @@
+{
+  "GET::/hello": {
+    "status": 200,
+    "response": {
+      "message": "Hello, world!"
+    },
+    "expire_at": 1742624925.9021664
+  },
+  "GET::/protected": {
+    "status": 200,
+    "response": {
+      "msg": "OK"
+    },
+    "expire_at": null,
+    "once": false,
+    "match_headers": {
+      "X-API-KEY": "abcd1234"
+    }
+  }
+}
