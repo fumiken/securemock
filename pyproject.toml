@@ -1,0 +1,24 @@
+[project]
+name = "securemock"
+version = "0.1.0"
+description = "A secure, ephemeral mock API server with Python CLI and FastAPI"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Proprietary - No Redistribution or Modification Allowed" }
+authors = [
+    { name = "K.Fumizawa", email = "fumizawa@cloud-laboratory.tech" }
+]
+
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "click",
+    "requests",
+]
+
+[project.scripts]
+securemock = "securemock.cli:cli"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
